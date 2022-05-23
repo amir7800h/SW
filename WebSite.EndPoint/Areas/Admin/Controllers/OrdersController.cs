@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebSite.EndPoint.Areas.Admin.Controllers
 {
     [Area("admin")]
-    [Authorize(Roles ="Admin,Operator")]
+    //[Authorize(Roles ="Admin,Operator")]
     public class OrdersController : Controller
     {
         private readonly IGetOrdersForAdminService _getOrdersForAdminService;

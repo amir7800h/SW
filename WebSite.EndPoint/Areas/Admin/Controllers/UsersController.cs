@@ -16,7 +16,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 namespace WebSite.EndPoint.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles ="Admin")]
+    //[Authorize(Roles ="Admin")]
     public class UsersController : Controller
     {
         private readonly IGetUsersService _getUsersService;

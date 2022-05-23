@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Services.HomePages.AddNewSlider;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebSite.EndPoint.Areas.Admin.Controllers
 {
    [Area("Admin")]
+   //[Authorize(Roles = "Operator, Admin")]
     public class SlidersController : Controller
     {
         private readonly IAddNewSliderService _addNewSliderService;

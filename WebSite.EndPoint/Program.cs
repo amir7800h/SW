@@ -25,6 +25,7 @@ using Common.Roles;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Persistence.Contexts;
+using WebSite.EndPoint.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -99,6 +100,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseCustomExceptionHandler();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -115,7 +117,7 @@ app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
       name: "areas",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+      pattern: "{area:exists}/{controller=AdminHome}/{action=Index}/{id?}"
     );
 });
 

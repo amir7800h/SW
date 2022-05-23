@@ -4,12 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Application.Services.HomePages.AddHomePageImages;
 using Domain.Entities.HomePages;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebSite.EndPoint.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    //[Authorize(Roles = "Operator, Admin")]
     public class HomePageImagesController : Controller
     {
         private readonly IAddHomePageImagesService _addHomePageImagesService;

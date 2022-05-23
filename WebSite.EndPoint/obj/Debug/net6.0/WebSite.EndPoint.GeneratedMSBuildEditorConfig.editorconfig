@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Work samples\DigiByte_Store\DigiByte_Store\WebSite.EndPoint
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Work samples/DigiByte_Store/DigiByte_Store/WebSite.EndPoint/Areas/Admin/Views/AdminHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Ib21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Work samples/DigiByte_Store/DigiByte_Store/WebSite.EndPoint/Areas/Admin/Views/Categories/AddNewCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xBZGROZXdDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
