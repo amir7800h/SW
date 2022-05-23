@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Authorization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace WebSite.EndPoint.Utilities
 {
+
     public static class ClaimUtility
     {
         public static long? GetUserId(ClaimsPrincipal User)
@@ -13,10 +15,11 @@ namespace WebSite.EndPoint.Utilities
             try
             {
                 var claimsIdentity = User.Identity as ClaimsIdentity;
-                long userId = long.Parse(claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value );
+                long userId;
+                long.TryParse(claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value, out userId); 
                 return userId;
             }
-            catch (Exception)
+            catch (NullReferenceException e)
             {
 
                 return null;

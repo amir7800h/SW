@@ -13,7 +13,7 @@ using Application.Interfaces.FacadPatterns;
 using Application.Services.Products.Queries.GetProductForSite;
 using WebSite.EndPoint.Utilities;
 
-namespace EndPoint.Site.Controllers
+namespace WebSite.EndPoint.Controllers
 {
     public class HomeController : Controller
     {

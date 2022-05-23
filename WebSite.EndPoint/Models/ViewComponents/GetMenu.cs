@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EndPoint.Site.ViewComponents
+namespace WebSite.EndPoint.ViewComponents
 {
     public class GetMenu:ViewComponent
     {
